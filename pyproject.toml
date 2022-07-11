@@ -15,6 +15,7 @@ PyQt5 = "^5.15.7"
 httpx = "^0.23.0"
 parsel = "^1.6.0"
 tenacity = "^8.0.1"
+cihai = "^0.12.0"
 
 [tool.poetry.dev-dependencies]
 yapf = "^0.32.0"
