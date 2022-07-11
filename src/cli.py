@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import argparse
 from pathlib import Path
 from time import sleep
@@ -22,7 +23,7 @@ def eval_wait_time(text, weight_person: int | float = 0):
 
 def cli_argparser() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    # TODO: 命令行读取更多配置
+    # TODO: 命令行读取更多配置 {image-orc, reapet-time, personal-weight, config-file, ...}
     parser.add_argument("file", help="input file")
     return parser.parse_known_args()[0]
 

@@ -5,7 +5,6 @@ from utils import retry
 from .base import HansDict
 
 
-
 class ZDict(HansDict):
     @retry
     def __init__(self, hans,) -> None:
