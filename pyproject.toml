@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tts-dictator"
+version = "0.1.0"
+description = ""
+authors = ["zpyg <pu.mb@qq.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gTTS = "^2.2.4"
+rich = "^12.4.4"
+playsound = "^1.3.0"
+PyGObject = "^3.42.1"
+PyQt5 = "^5.15.7"
+httpx = "^0.23.0"
+parsel = "^1.6.0"
+tenacity = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
