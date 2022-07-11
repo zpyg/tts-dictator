@@ -10,3 +10,4 @@
 + 其他见 `rg TODO`
 
 + 本地词典数据库 https://github.com/pwxcoo/chinese-xinhua.git
++ 本地 tts, ocr
