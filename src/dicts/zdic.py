@@ -1,14 +1,13 @@
 from httpx import get
 from parsel import Selector
-from tenacity import retry, stop_after_attempt, wait_fixed
+from utils import retry
 
 from .base import HansDict
 
 
-# TODO: ABC
-class ZDict(HansDict):
 
-    @retry(stop=stop_after_attempt(2), wait=wait_fixed(2))
+class ZDict(HansDict):
+    @retry
     def __init__(self, hans,) -> None:
         self.hans = hans
         self.selector = Selector(
@@ -25,9 +24,3 @@ class ZDict(HansDict):
         return int(
             self.selector.xpath(
                 "//td[@class='z_bs2']/p[3]/text()").get())
-
-    # def _check_empty(self, obj):
-    #     "return obj if it's not empty else raise an error"
-    #     if not obj:
-    #         raise ValueError
-    #     return obj

@@ -17,6 +17,7 @@ parsel = "^1.6.0"
 tenacity = "^8.0.1"
 
 [tool.poetry.dev-dependencies]
+yapf = "^0.32.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
