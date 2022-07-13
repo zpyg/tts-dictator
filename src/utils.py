@@ -1,4 +1,11 @@
-from tenacity import retry as _retry
-from tenacity import stop_after_attempt, wait_fixed
+import sys
+import logging
 
-retry = _retry(stop=stop_after_attempt(2), wait=wait_fixed(2))
+from tenacity import retry as _retry
+from tenacity import wait_fixed, after_log
+
+logging.basicConfig(stream=sys.stderr, level=logging.WARNING)
+
+logger = logging.getLogger(__name__)
+
+retry = _retry(wait=wait_fixed(3), after=after_log(logger, logging.WARNING))
