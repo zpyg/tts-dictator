@@ -1,3 +1,5 @@
+# 暂时放弃 能用就行
+
 ## TODO
 
 + Qt GUI
@@ -15,16 +17,14 @@
 + 可自定义源
 
 + 整理依赖，各自只保留一种主要源，使其他源作为可选依赖
-@核心依赖: 使用 飞浆 TTS, OCR, Cihai Dict + zdic(had better local) / 基于 chinese-xinhua 的组词库(太慢就用 C++ 写,或者导入到sqlite)
+@核心依赖: 
+  TTS gTTS / baidu API
+  OCR easyocr
+  词库 Cihai Dict + zdic(had better local) / 基于 chinese-xinhua 的组词库(太慢就用 C++ 写,或者导入到sqlite)
 @可选依赖
 
 + 其他见 `rg TODO`
 
 
-## Reference
-
 https://github.com/pwxcoo/chinese-xinhua.git
 https://github.com/fighting41love/funNLP
-
-https://github.com/PaddlePaddle/PaddleSpeech
-https://github.com/coqui-ai/TTS

@@ -1,0 +1,8 @@
+tenacity
+gTTS
+playsound
+PyGObject
+httpx
+parsel
+cihai
+PyQt5
