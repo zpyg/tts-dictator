@@ -45,7 +45,7 @@ if __name__ == '__main__':
             except ValueError: # 组词失败则使用原词
                 pass
         # 初始化 speaker
-        with Speaker(f"第{n+1}个: {word}。", lang="zh-CN", tld="cn",slow= True) as speaker:
+        with Speaker(f"第{n+1}个: {word}。", lang="zh", tld="cn",slow= True) as speaker:
             # 重复
             for _ in range(REPEAT_TIME):
                 speaker.say()
